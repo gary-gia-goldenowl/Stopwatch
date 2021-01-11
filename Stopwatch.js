@@ -1,3 +1,9 @@
+document.getElementById("start").addEventListener("click",function(){
+    stopwatch.Start();
+});
+document.getElementById("reset").addEventListener("click",function(){
+    stopwatch.Reset();
+});
 class Stopwatch{
     constructor(){
         this.time = 0;
@@ -12,9 +18,9 @@ class Stopwatch{
             document.getElementById("reset").innerHTML = "Stop"
         }
         else{
-        this.isRunning = false;
-        document.getElementById("start").innerHTML = "Resume"
-    }
+            this.isRunning = false;
+            document.getElementById("start").innerHTML = "Resume"
+        }
     }
 
     Reset(){
@@ -57,7 +63,3 @@ class Stopwatch{
     }
 }
     stopwatch = new Stopwatch();
-<<<<<<< HEAD
-    aaa;
-=======
->>>>>>> ae792941549f080f761feb65a6f31e100ed7e74d
