@@ -18,8 +18,8 @@ class Stopwatch{
             document.getElementById("reset").innerHTML = "Stop"
         }
         else{
-        this.isRunning = false;
-        document.getElementById("start").innerHTML = "Resume"
+            this.isRunning = false;
+            document.getElementById("start").innerHTML = "Resume"
         }
     }
 
