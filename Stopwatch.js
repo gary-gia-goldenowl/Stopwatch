@@ -8,7 +8,7 @@ class Stopwatch{
     constructor(){
         this.time = 0;
         this.isRunning = false;
-    }
+    }b
     
     Start(){
         if(this.isRunning == false){
