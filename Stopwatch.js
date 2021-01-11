@@ -36,7 +36,6 @@ class Stopwatch{
             document.getElementById("start").innerHTML = "Start";
             document.getElementById("reset").innerHTML = "Reset";
         }
-
     }
     
     Timerun(){
