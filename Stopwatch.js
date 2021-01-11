@@ -3,6 +3,7 @@ class Stopwatch{
         this.time = 0;
         this.isRunning = false;
     }
+    
     Start(){
         if(this.isRunning == false){
             this.isRunning = true;
@@ -29,31 +30,30 @@ class Stopwatch{
             document.getElementById("start").innerHTML = "Start";
             document.getElementById("reset").innerHTML = "Reset";
         }
- 
-    
 
     }
+    
     Timerun(){
         var self = this;
         if(self.isRunning==true){
             setTimeout(function(){
-            self.time++;
-            var minute = Math.floor(self.time/10/60);
-            var second = Math.floor(self.time/10%60);
-            var milisec = self.time%10; 
-            if(minute<10){
-                minute = "0" + minute
-            }
-            if(second<10){
-                second = "0" + second
-            }
-            if(milisec<10){
-                milisec = "0" + milisec
-            }
-            document.getElementById("Watch").innerHTML = minute + ":" + second + ":" + milisec ;
-            self.Timerun();
-        },100);
-    }
+                self.time++;
+                var minute = Math.floor(self.time/10/60);
+                var second = Math.floor(self.time/10%60);
+                var milisec = self.time%10; 
+                if(minute<10){
+                    minute = "0" + minute
+                }
+                if(second<10){
+                    second = "0" + second
+                }
+                if(milisec<10){
+                    milisec = "0" + milisec
+                }
+                document.getElementById("Watch").innerHTML = minute + ":" + second + ":" + milisec ;
+                self.Timerun();
+            },100);
+        }
     }
 }
     stopwatch = new Stopwatch();
