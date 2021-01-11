@@ -20,7 +20,7 @@ class Stopwatch{
         else{
         this.isRunning = false;
         document.getElementById("start").innerHTML = "Resume"
-    }
+        }
     }
 
     Reset(){
@@ -36,7 +36,6 @@ class Stopwatch{
             document.getElementById("start").innerHTML = "Start";
             document.getElementById("reset").innerHTML = "Reset";
         }
-
     }
     
     Timerun(){
