@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="Stopwatch.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="screen">
+        <span id="Watch" class="screen--state">
+          00:00:00
+        </span>
+      </h1>
+
+      <div class="buttons">
+        <button class="buttons--style" id="start" onclick="stopwatch.Start()">Start</button>
+        <button class="buttons--style" id="reset" onclick="stopwatch.Reset()">Reset</button>
+      </div>
+    </div>
+
+    <script src="Stopwatch.js"></script>
+  </body>
+</html>
