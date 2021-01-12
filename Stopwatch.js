@@ -1,9 +1,13 @@
+document.addEventListener("DOMContentLoaded", function(){
 document.getElementById("start").addEventListener("click",function(){
     stopwatch.Start();
-},true);
+});
 document.getElementById("reset").addEventListener("click",function(){
     stopwatch.Reset();
-},true);
+});
+});
+
+
 class Stopwatch{
     constructor(){
         this.time = 0;
