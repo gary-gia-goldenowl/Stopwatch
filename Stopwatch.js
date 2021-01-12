@@ -1,9 +1,9 @@
 document.getElementById("start").addEventListener("click",function(){
     stopwatch.Start();
-});
+},false);
 document.getElementById("reset").addEventListener("click",function(){
     stopwatch.Reset();
-});
+},false);
 class Stopwatch{
     constructor(){
         this.time = 0;
