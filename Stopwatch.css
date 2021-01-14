@@ -53,6 +53,6 @@
     cursor: pointer;
   }
   
-  .buttons button:hover {
+  .group-buttons button:hover {
     background-color: #d3d6dd;
   }
