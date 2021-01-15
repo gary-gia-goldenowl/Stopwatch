@@ -2,6 +2,7 @@ class Stopwatch{
     constructor(){
         this.time = 0;
         this.isRunning = false;
+        this.isResetRun=false;
     }
     
     Start(){
@@ -15,9 +16,18 @@ class Stopwatch{
             this.isRunning = false;
             document.getElementById("start").innerHTML = "Resume"
         }
+        if( this.isResetRun == true)
+        {
+            this.isResetRun = false;
+            this.isRunning = true;
+            this.time=-1
+            document.getElementById("Watch").innerHTML="00:00:00"
+            
+        }
     }
 
     Reset(){
+        this.isResetRun = true;
         if(this.isRunning==true){
             this.isRunning = false
             document.getElementById("start").innerHTML = "Start";
@@ -53,6 +63,7 @@ class Stopwatch{
                 self.Timerun();
             },100);
         }
-    }  
+    }
+    
 }
 
