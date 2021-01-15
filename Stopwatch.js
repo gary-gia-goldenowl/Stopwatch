@@ -53,7 +53,6 @@ class Stopwatch{
                 self.Timerun();
             },100);
         }
-    }
-    
+    }  
 }
 
