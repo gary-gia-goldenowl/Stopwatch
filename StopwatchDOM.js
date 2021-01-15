@@ -1,3 +1,4 @@
+var stopwatch = new Stopwatch();
 document.addEventListener("DOMContentLoaded", function(){       //DOM must load first 
     document.getElementById("start").addEventListener("click",function(){
         stopwatch.Start();
@@ -6,5 +7,3 @@ document.addEventListener("DOMContentLoaded", function(){       //DOM must load 
         stopwatch.Reset();
     });
     });
-
-var stopwatch = new Stopwatch();
