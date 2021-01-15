@@ -57,4 +57,3 @@ class Stopwatch{
     
 }
 
-var stopwatch = new Stopwatch();
