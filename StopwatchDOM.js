@@ -6,3 +6,5 @@ document.addEventListener("DOMContentLoaded", function(){       //DOM must load 
         stopwatch.Reset();
     });
     });
+
+var stopwatch = new Stopwatch();
